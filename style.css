@@ -1,0 +1,38 @@
+.box {
+    width: 350px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header div {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.picContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.picContainer img {
+    width: 100px;
+}
