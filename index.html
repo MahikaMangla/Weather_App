@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="mainContainer">
@@ -12,12 +13,32 @@
             <div class="header">
                 <div>Weather App</div>
             </div>
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name" id="search-input">
+                <button id="search-button">Search</button>
+            </div>
             <div class="box">
-                <div class="picContainer">
-                    <img src="./images/cloudy.png" alt="" srcset="">
+                <div class="weather-info">
+                    <div class="city">--</div>
+                    <div class="temperature">--°C</div>
+                    <div class="picContainer">
+                        <img src="./images/cloudy.png" alt="weather icon" id="weather-icon">
+                    </div>
+                    <div class="description">--</div>
+                    <div class="weather-details">
+                        <div class="humidity">
+                            <span>Humidity</span>
+                            <span class="humidity-value">--%</span>
+                        </div>
+                        <div class="wind">
+                            <span>Wind Speed</span>
+                            <span class="wind-value">-- km/h</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
