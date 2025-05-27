@@ -12,29 +12,60 @@
         <div class="container">
             <div class="header">
                 <div>Weather App</div>
+                <div class="unit-toggle">
+                    <button id="celsius" class="active">°C</button>
+                    <button id="fahrenheit">°F</button>
+                </div>
             </div>
             <div class="search-box">
                 <input type="text" placeholder="Enter city name" id="search-input">
                 <button id="search-button">Search</button>
             </div>
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
             <div class="box">
                 <div class="weather-info">
                     <div class="city">--</div>
                     <div class="temperature">--°C</div>
+                    <div class="feels-like">Feels like: --°C</div>
                     <div class="picContainer">
                         <img src="./images/cloudy.png" alt="weather icon" id="weather-icon">
                     </div>
                     <div class="description">--</div>
                     <div class="weather-details">
-                        <div class="humidity">
+                        <div class="detail-item humidity">
                             <span>Humidity</span>
                             <span class="humidity-value">--%</span>
                         </div>
-                        <div class="wind">
+                        <div class="detail-item wind">
                             <span>Wind Speed</span>
                             <span class="wind-value">-- km/h</span>
                         </div>
+                        <div class="detail-item aqi">
+                            <span>Air Quality</span>
+                            <span class="aqi-value">--</span>
+                        </div>
                     </div>
+                    <div class="sun-times">
+                        <div class="sunrise">
+                            <span>Sunrise</span>
+                            <span class="sunrise-value">--:--</span>
+                        </div>
+                        <div class="sunset">
+                            <span>Sunset</span>
+                            <span class="sunset-value">--:--</span>
+                        </div>
+                    </div>
+                    <div class="last-updated">
+                        Last updated: <span class="update-time">--</span>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-boxes" id="forecast">
+                    <!-- Forecast items will be added here dynamically -->
                 </div>
             </div>
         </div>
